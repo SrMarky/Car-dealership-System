@@ -31,8 +31,8 @@ public class AppCreator {
         System.out.println("Colore : " + autoManager.getColor());
         System.out.println("Venditore : " + autoManager.getSeller());
 
-        Supplier<CarObject> autoManagerSupplier = () -> new CarObject(autoManager.getModel(), autoManager.getDescription(), autoManager.getDate(), autoManager.getColor(), autoManager.getSeller());
-        main.getAutoManagerList().add(autoManagerSupplier.get());
+        Supplier<CarObject> carObjectSupplier = () -> new CarObject(autoManager.getModel(), autoManager.getDescription(), autoManager.getDate(), autoManager.getColor(), autoManager.getSeller());
+        main.getAutoManagerList().add(carObjectSupplier.get());
         Thread carSave = new Thread(new CarSave(main));
 
         try {
