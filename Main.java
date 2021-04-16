@@ -12,7 +12,7 @@ public class Main implements AppManager {
     @Getter private MysqlManager mysqlManager;
     @Getter private List<CarManager> autoManagerList;
 
-    public static void main(String[] strings){
+    public static void main(String[] strings) {
         Main main = new Main();
         main.start();
     }
