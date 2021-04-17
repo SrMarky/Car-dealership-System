@@ -24,11 +24,11 @@ public class MysqlManager {
 
     private void createTable() {
         String sql = "CREATE TABLE IF NOT EXISTS cars(" +
-                "model VARCHAR(32)," +
+                "model VARCHAR(16)," +
                 "description VARCHAR(64), " +
-                "date VARCHAR(32), " +
-                "color VARCHAR(32), " +
-                "seller VARCHAR(32));";
+                "date VARCHAR(16), " +
+                "color VARCHAR(16), " +
+                "seller VARCHAR(16));";
         try {
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.execute();
