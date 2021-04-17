@@ -30,7 +30,7 @@ public class MysqlManager {
                 "color VARCHAR(32), " +
                 "seller VARCHAR(32));";
         try {
-            PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement ps = connection.prepareStatement(sql);
             ps.execute();
             ps.close();
 
@@ -42,7 +42,7 @@ public class MysqlManager {
     public void insertCar(String model,String field,String date,String color,String seller) {
         try {
             String sql = "INSERT INTO cars(model,description,date,color,seller) VALUES(?,?,?,?,?)";
-            PreparedStatement ps1 = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement ps1 = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS); //TODO NETXT UPDATE ADD * ID AI *
             ps1.setString(1, model);
             ps1.setString(2, field);
             ps1.setString(3, date);
