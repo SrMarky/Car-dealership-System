@@ -1,0 +1,3 @@
+Car dealership system 1.1.0 by Marky with graphical interface.
+Coming soon there will be new updates with additions, controls, and a graphical interface from which you can manage everything.
+
