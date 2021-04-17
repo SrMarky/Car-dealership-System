@@ -12,7 +12,7 @@ public class GUI {
         selectGUI(guiType);
     }
 
-    private void selectGUI(GuiType guiType) { //TODO : DA FINIRE AGGIUNGERE BACKGROUND SISTEMARE BENE I PULSANTI
+    private void selectGUI(GuiType guiType) { //TODO : DA FINIRE TUTTI I CAMPI, AGGIUNGERE GIF PER BACKGROUND, E RI-ORDINARE TUTTO.
         switch (guiType) {
             case START_APP_GUI:
                 Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
